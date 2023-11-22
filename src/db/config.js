@@ -3,6 +3,7 @@ const sequelize = new Sequelize("test", "postgres", "Humanrights1", {
   host: "localhost",
   port: "5432",
   dialect: "postgres",
+  logging: false,
 });
 export const connectDb = async () => {
   try {
